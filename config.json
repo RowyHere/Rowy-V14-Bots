@@ -1,17 +1,17 @@
 {
 
-    "token": "bot tokeni gir",
+    "token": "",
     
-    "prefix": ".",
+    "prefix": ",
 
-    "voiceChannelId": "ses kanal idsi gir",
+    "voiceChannelId": "",
     "activities": "Rowy 💙",
 
-    "guildId": "sunucu id gir",
+    "guildId": "",
 
-    "owners": ["sunucu sahipleri idlerini gir"],
+    "owners": [""],
     "developers": ["evet sen bu altyapıyı kullanıp kendim yazdım diyen maymun kendi idni gir havli ol"],
 
-    "mongoose": "mongoose urlni gir meveloper abim"
+    "mongoose": ""
 
 }
