@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require('../../config.json');
+const config = require("../config");
 
 /**@param {Discord.Client} client
  * @param {Discord.messageCreate} messageCreate
@@ -22,6 +22,15 @@ if (command.guildOnly && message.channel.type !== 'GUILD_TEXT') {
     return message.reply({ content: "This command is not valid for private messages.!" });
 }
 
+if(command.developerOnly === true) {
+    if(!config.developers.includes(message.author.id)) {
+    message.reply({ content: "Bu komutu sadece geliştiricim kullanabilir."})
+    return;
+}
+}
+
+if(command.enabled === false) return;
+
 if (command.args && !args.length) {
     let reply = `You offered no arguments, ${message.author}!`;
 
@@ -39,24 +48,24 @@ if (!cooldowns.has(command.name)) {
 
 const now = Date.now();
 const timestamps = cooldowns.get(command.name);
-const cooldownAmount = (command.cooldown || 3) * 1000;
+const cooldownAmount = (command.cooldown || 1) * 1000;
 
 if (timestamps.has(message.author.id)) {
     const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
 
     if (now < expirationTime) {
         const timeLeft = (expirationTime - now) / 1000;
-        return message.reply({ content: `Bu komutu tekrar kullanabilmek için **${timeLeft.toFixed(1)}** saniye bekle!`, allowedMentions: { repliedUser: false }});
+        return message.reply({ content: `Bu komutu kullanmak için ${timeLeft.toFixed(1)} saniye bekleyin.`, allowedMentions: { repliedUser: false }});
     }
 }
 
 timestamps.set(message.author.id, now);
 setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 try {
-    command.execute(message, args, client);
+    command.execute(message, args, client, config);
 } catch (error) {
     console.error(error);
-    message.reply('Komutu çalıştırırken bir hata ile karşılaştım, geliştiricime ulaşın!');
+    message.reply('Komutu çalıştırırken hata ile karşılaştım geliştiricime ulaşın.');
 }
 
 }
