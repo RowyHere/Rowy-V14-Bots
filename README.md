@@ -1,31 +1,25 @@
-# Rowy Bots
-- Testleri yapılmıştır, hiçbir hatası bulunmamaktadır.
-- Sizlere geliştirmiş olduğum botlardan biriyle tanıştırmak istiyorum.
-- V13 sürümünü sildim yerine V14 sürümlü Register sistemini bırakıyorum. (System dosyasını 20 starda vericem)
+# Rowy-All-Bots
 
-# Yapmanız gereken adımlar
-- config.json dosyasını doldurun ardından konsolu açıp npm i yazın, bot aktifleşince sunucu içerisinde <prefix>setup yazıp istenilenleri doğru şekilde yapın aksi halde botunuz doğru çalışmaz.
+`-` Botta bilerek hatalar bırakılmıştır. Basit kendinizin çözebileceği hatalardır, eğer yapamazsanız [Luppux](https://discord.gg/luppux) veya [Wade](https://discord.gg/1348) gelerek hataları düzeltebilirsiniz!
 
-# Görseller
+`-` Botların hatasız ve Setup halini `100 Star` geldiğinde paylaşmayı düşünüyorum. (Botlar PM2 olarak çalışmaktadır.)
 
-- Hoşgeldin(Welcome) Mesajı
-<img src="https://rowy.has-no-bra.in/5yR8vMeob.png">
+# `Özellikler :`
 
-# Tag Sistemi
-<img src="https://rowy.has-no-bra.in/5yR8xmSZI.png">
+`-` Kayıt Sistemi
 
-# Kayıt sistemi
-<img src="https://rowy.has-no-bra.in/5yRbiel8y.png">
-<img src="https://rowy.has-no-bra.in/5yRb7jBK8.png">
-<img src="https://rowy.has-no-bra.in/5yRaU_Urr.png">
-<img src="https://rowy.has-no-bra.in/5yRbKZWRZ.png">
-- Not: İsimler komutunun diğer özelliği; 10 ve üzeri ismi var ise sayfalı sistem aktifleşiyor.
+`-` İstatistik Sistemi
 
-# Kur(Setup) Sistemi
+`-` Davet Sistemi
 
-<img src="https://rowy.has-no-bra.in/5yRhejUhn.png">
-<img src="https://rowy.has-no-bra.in/5yRhi2J_W.png">
+`-` Moderasyon Sistemi
 
-# Genel Görseller
+`-` Denetim Sistemi
 
-<img src="https://rowy.has-no-bra.in/5yRbDO2b7.png">
+`-` Koruma Sistemi (Güncellendi & Hatalar Düzeltildi)
+
+`-` Daha fazla sistem eklememi istiyorsanız [Discord](https://discord.gg/1348) sunucumuza gelip sistem önerisinde bulunabilirsiniz.
+
+# `Bot Resimleri :`
+
+`-` YAKINDA EKLERIM.

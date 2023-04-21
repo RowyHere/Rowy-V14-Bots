@@ -1,0 +1,21 @@
+{
+  "name": "wade-allbots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.14.0",
+    "canvas": "^2.11.0",
+    "cron": "^2.2.0",
+    "discord.js": "^14.7.1",
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.9.0",
+    "ms": "^2.1.3"
+  }
+}
